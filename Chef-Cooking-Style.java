@@ -1,4 +1,4 @@
-Chef Gusteau is one of the finest chefs in Paris. Let's understand how he cooks!
+/*Chef Gusteau is one of the finest chefs in Paris. Let's understand how he cooks!
 
 Chef's Ingredients
 1. The chief receives exactly 1 ingredient per day from the market. The ingredients never repeat. 
@@ -53,6 +53,8 @@ CARBPotato CARBCorn FATOlive FIBERCarrot CARBBeetroot
 
 Example OUTPUT 3:
 000100101000
+
+*/
 
 
 
