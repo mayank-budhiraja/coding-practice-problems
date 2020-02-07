@@ -57,5 +57,42 @@ Example OUTPUT 3:
 
 */
 
+import java.util.*;
+import java.util.Scanner;
+
+public class myone
+{
+	public static void main (String[] args)
+	{
+        Scanner sc = new Scanner(System.in);
+        
+        int numberofDays = sc.nextInt(); //number of days
+        String[] arr = new String[numberofDays];
+        
+        char[] chars = new char[numberofDays];
+        Arrays.fill(chars, '0');
+        String s = new String(chars);
+
+        StringBuilder sb = new StringBuilder(s);
+        
+        for(int i=0; i<numberofDays; i++)
+        {
+            arr[i] = sc.next(); //get the input 
+        }
+        
+        for(int j=0; j<numberofDays-1; j++)
+        {
+            if(arr[j].regionMatches(0, arr[j+1], 0, 3))
+            {
+                System.out.println(""+arr[j].regionMatches(0, arr[j+1], 0, 3));
+                System.out.println(""+arr[j]);
+                sb.setCharAt(j+2, '1');
+            }
+        }
+        s = sb.toString();
+        System.out.println(""+s);
+        sc.close();
+    }
+}
 
 
